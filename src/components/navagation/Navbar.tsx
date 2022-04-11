@@ -15,7 +15,7 @@ const Navbar = () => {
                 <NavContent>
                     <p>Nick Carlson</p>
                     <img src="/img/hal.png" alt="Hal is watching you" width={30} height={30} />
-                    <HamburgerMenu onClick={() => setShowNav(!showNav)}>&#9776;</HamburgerMenu>
+                    <HamburgerMenu onClick={() => setShowNav(!showNav)}>{showNav ? String.fromCharCode(10005) : String.fromCharCode(9776)}</HamburgerMenu>
                     {showNav && <NavSidebar />}
                 </NavContent>
             </div>
@@ -23,26 +23,28 @@ const Navbar = () => {
     )
 }
 
-export default Navbar;
-
 const NavBar = styled.nav`
     background: rgb(0, 0, 0);
     color: white;
 `
 
 const NavContent = styled.div.attrs({
-    className: "row"
+   
 })`
+    display:flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 `
 
 const HamburgerMenu = styled.span`
     font-size: 30px;
     cursor: pointer;
-    transition: all 200ms ease-out;
+    transition: all 300ms ease-out;
 
     &:hover {
         color: #66FCF1;
     }
 `
+
+export default Navbar;

@@ -7,7 +7,9 @@ const HomePage = () => {
         <Navbar />
         <div className="container">
             <div className="row">
-                <h2>This is the Home Page</h2>
+                <div className="col">
+                    <h2>This is the Home Page</h2>
+                </div>
             </div>
         </div>
         </>
