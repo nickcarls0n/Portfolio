@@ -1,0 +1,38 @@
+$body-gradent-top: #E5E5E6;
+$body-gradent-bottom: #C5C6C8;
+$footer-back: #202833;
+$dark-text: #090A0D;
+$light-text: #fff;
+$accent-onwhite: #46A29F;
+$accent-ondark: #66FCF1;
+$bp-background-opacity: 0, 0, 0, 0.5;
+
+$break-sm: 576px;
+$break-med: 768px;
+$break-lg: 992px;
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  background-image: linear-gradient(to bottom right, white, $body-gradent-bottom);
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $accent-onwhite;
+}
+
+h1 {
+  font-size: 2.94em;
+}
+
+h2 {
+  font-size: 2.31em;
+  margin-bottom: 37px;
+}
+
+h3{
+  font-size: 1.82em;
+}
+
