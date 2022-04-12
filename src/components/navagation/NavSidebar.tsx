@@ -6,9 +6,13 @@ import DevelopmentIcon from "../../Svg/DevelopmentIcon";
 import AboutIcon from "../../Svg/AboutIcon"
 import styled from "styled-components";
 
-const NavSidebar = () => {
+interface NavSidbarProps {
+    width?: string;
+}
+
+const NavSidebar = (props: NavSidbarProps) => {
     return (
-        <SidebarWrapper>
+        <SidebarWrapper width={props.width}>
             <StyledLink to="/home"><HomeIcon width={20} />Home</StyledLink>
             <StyledLink to="/design"><DesignIcon width={20} />Design</StyledLink>
             <StyledLink to="/development"><DevelopmentIcon width={20} />Development</StyledLink>
@@ -17,17 +21,17 @@ const NavSidebar = () => {
     )
 }
 
-const SidebarWrapper = styled.div`
-    height: 100%
-    width: 350px
-    position: fixed
-    z-index: 100
-    top: 0
-    left: 0
-    background-color: #111
-    overflow-x: hidden
-    transition: 0.5s
-    padding-top: 60px
+const SidebarWrapper = styled.div<NavSidbarProps>`
+    height: 100%;
+    width: ${props => props.width};
+    position: fixed;
+    z-index: 100;
+    top: 51px;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 
     @media screen and (min-width: 576px) {
         right: 0;

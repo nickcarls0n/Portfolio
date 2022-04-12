@@ -16,7 +16,7 @@ const Navbar = () => {
                     <p>Nick Carlson</p>
                     <img src="/img/hal.png" alt="Hal is watching you" width={30} height={30} />
                     <HamburgerMenu onClick={() => setShowNav(!showNav)}>{showNav ? String.fromCharCode(10005) : String.fromCharCode(9776)}</HamburgerMenu>
-                    {showNav && <NavSidebar />}
+                    <NavSidebar width={showNav ? "350px" : "0px"} />
                 </NavContent>
             </div>
         </NavBar>
