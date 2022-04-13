@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/navagation/Navbar";
 import IntroSection from "../components/home/IntroSection";
 import Footer from "../components/footer/Footer";
+import DandDSection from "../components/home/DandDSection";
 import styled from "styled-components";
 import Button from "../components/button/Button";
 
@@ -11,68 +12,60 @@ const HomePage = () => {
       <Navbar />
       <main
         style={{
-          backgroundImage: `url(/img/background-dots.png)`,
+          backgroundImage: `url(/img/background-dots.png), linear-gradient(to bottom right, rgba(128, 128, 128, 0.42), rgba(70, 162, 159, 0.42))`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
+          paddingBottom: "160px",
         }}
       >
         <IntroSection />
+        <DandDSection />
+        <div style={{ position: "relative" }}>
+          <div className="container">
+            <div className="row">
+              <AboutImg src="/img/me-snowday.jpg" alt="" />
+              <TextSection>
+                <h3>About</h3>
+                <p>
+                  I’m Nick Carlson, a California based designer, photographer
+                  and front end developer. Throughout my career, I have lead
+                  projects in user interface design, web application design and
+                  development, brand identity, e-commerce design and
+                  implementation, illustration and art & creative direction.
+                </p>
+                <div className="row">
+                  <div className="col-6">
+                    <h4>Design</h4>
+                    <AboutList>
+                      <li>UI Design</li>
+                      <li>Email Design</li>
+                      <li>Adobe CC</li>
+                      <li>Figma</li>
+                      <li>Sketch</li>
+                    </AboutList>
+                  </div>
+                  <div className="col-6">
+                    <h4>Development</h4>
+                    <AboutList>
+                      <li>Web App</li>
+                      <li>React</li>
+                      <li>HTML / css / JavaScript</li>
+                      <li>E-Commerce</li>
+                      <li>Email</li>
+                    </AboutList>
+                  </div>
+                </div>
+                <Button to="/about" text="See More" />
+              </TextSection>
+            </div>
+          </div>
+        </div>
       </main>
-      <HomeSection img="/img/design-home.png">
-        <div className="container">
-          <div className="row">
-            <TextSection>
-              <h3>Design</h3>
-              <p>
-                For over five years, I have been designing and developing UI/UX,
-                web and print solutions for small to medium-sized businesses. I
-                work hard to create visual experiences that flow seamlessly from
-                screen to page. If you are looking for a designer that can offer
-                diverse range of solutions, from UI/UX design to print, please
-                contact me.
-              </p>
-              <Button to="/design" text="See More" />
-            </TextSection>
-          </div>
-        </div>
-      </HomeSection>
-      <HomeSection img="/img/development-home.png">
-        <div className="container">
-          <div className="row">
-            <TextSectionTwo>
-              <h3>Design</h3>
-              <p>
-                For over five years, I have been designing and developing UI/UX,
-                web and print solutions for small to medium-sized businesses. I
-                work hard to create visual experiences that flow seamlessly from
-                screen to page. If you are looking for a designer that can offer
-                diverse range of solutions, from UI/UX design to print, please
-                contact me.
-              </p>
-              <Button to="/design" text="See More" />
-            </TextSectionTwo>
-          </div>
-        </div>
-      </HomeSection>
+
       <Footer />
     </>
   );
 };
-
-const HomeSection = styled.div<{ img: string }>`
-  background-image: url(${(props) => props.img});
-  background-position: right;
-  background-repeat: no-repeat;
-  margin: 133px 0 158px 0;
-  position: relative;
-  width: 100%;
-  height: calc(0.5 * 100vw);
-
-  @media (min-width: 768px) {
-    background-size: contain;
-    height: calc(0.365 * 100vw);
-  }
-`;
 
 const TextSection = styled.div.attrs({
   className: "col-md-7 offset-md-1",
@@ -86,16 +79,17 @@ const TextSection = styled.div.attrs({
   }
 `;
 
-const TextSectionTwo = styled.div.attrs({
-  className: "col-md-7 offset-md-4",
-})`
-  position: relative;
-  margin-top: 18%;
-  background: rgba(0, 0, 0, 0.66);
-  padding: 40px 40px 60px 40px;
+const AboutImg = styled.img`
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  opacity: 0.89;
+`;
 
-  @media (min-width: 768px) {
-  }
+const AboutList = styled.ul`
+  padding-left: 24px;
+  color: white;
+  line-height: 1.6;
 `;
 
 export default HomePage;

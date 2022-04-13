@@ -23,6 +23,7 @@ const StyledButton = styled(Link)`
   text-transform: uppercase;
   text-decoration: none;
   font-family: "Roboto Mono", monospace;
+  margin-top: 1em;
   border: 0.2em solid #66fcf1;
   padding: 0.5em 1em;
   &::before {
