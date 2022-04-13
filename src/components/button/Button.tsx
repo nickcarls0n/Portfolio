@@ -17,6 +17,7 @@ const Button = (props: ButtonProps) => {
 
 const StyledButton = styled(Link)`
   position: relative;
+  display: inline-block;
   background: none;
   color: white;
   text-transform: uppercase;
