@@ -51,12 +51,20 @@ p {
   color: $light-text;
 }
 
+a {
+  text-decoration: none;
+}
+
 .white-text {
   color: $light-text;
 }
 
 .highlight-text {
   color: $accent-ondark;
+}
+
+.accent-onlight {
+  color: $accent-onwhite;
 }
 
 .fa-linkedin-in {

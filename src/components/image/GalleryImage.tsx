@@ -3,12 +3,16 @@ import styled from "styled-components";
 
 interface GalleryImageProps {
   img?: string;
+  onClick?: () => void;
 }
 
 const GalleryImage = (props: GalleryImageProps) => {
   return (
     <>
-      <GalleryImgDiv style={{ backgroundImage: props.img }}></GalleryImgDiv>
+      <GalleryImgDiv
+        style={{ backgroundImage: props.img }}
+        onClick={props.onClick}
+      ></GalleryImgDiv>
     </>
   );
 };
@@ -22,7 +26,7 @@ const GalleryImgDiv = styled.div`
 
   &:hover {
     opacity: 0.6;
-    background-size: 110%;
+    background-size: 103%;
   }
 `;
 
