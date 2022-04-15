@@ -71,6 +71,13 @@ const Design = () => {
         <GalleryRow>
           <div className="col-lg-4">
             <GalleryImage img="url(img/design/Hang-Ten-Mock-up.jpg)" />
+            <Modal
+              showModal={viewModal == 4}
+              img="img/design/cha-lights.jpg"
+              title="Ad banner design"
+              about="This was part of a larger marketing push to create assets that would generate traffic to the companies e-commerce site."
+              onClick={() => setViewModal(0)}
+            />
           </div>
           <div className="col-lg-8">
             <GalleryImage
