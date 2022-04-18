@@ -46,7 +46,7 @@ const Design = () => {
               <li>Development</li>
               <li>Email Marketing</li>
             </ul>
-            <CaseStudyLink to="">See More &#8594;</CaseStudyLink>
+            <CaseStudyLink to="/cha">See More &#8594;</CaseStudyLink>
           </div>
           <div className="col-md-4">
             <Image

@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Design from "./pages/Design";
 import Development from "./pages/Development";
 import CinicBike from "./pages/CinicBike";
+import Cha from "./pages/Cha";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/development" element={<Development />} />
         <Route path="/design" element={<Design />} />
         <Route path="/cinicbike" element={<CinicBike />} />
+        <Route path="/cha" element={<Cha />} />
       </Routes>
     </Router>
   );
