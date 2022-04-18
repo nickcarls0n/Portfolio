@@ -32,7 +32,7 @@ const Design = () => {
               <li>UI/UX Design</li>
               <li>Wordpress Development</li>
             </ul>
-            <CaseStudyLink to="">See More &#8594;</CaseStudyLink>
+            <CaseStudyLink to="/cinicbike">See More &#8594;</CaseStudyLink>
           </div>
           <div className="col-md-4">
             <Image
