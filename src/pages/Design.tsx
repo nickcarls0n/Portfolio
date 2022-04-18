@@ -59,7 +59,7 @@ const Design = () => {
               <li>UI/UX Design</li>
               <li>Wordpress Development</li>
             </ul>
-            <CaseStudyLink to="">See More &#8594;</CaseStudyLink>
+            <CaseStudyLink to="/qualarc">See More &#8594;</CaseStudyLink>
           </div>
         </div>
         <div className="row">

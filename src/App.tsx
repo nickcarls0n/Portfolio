@@ -7,6 +7,7 @@ import Design from "./pages/Design";
 import Development from "./pages/Development";
 import CinicBike from "./pages/CinicBike";
 import Cha from "./pages/Cha";
+import QualArc from "./pages/QualArc";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/design" element={<Design />} />
         <Route path="/cinicbike" element={<CinicBike />} />
         <Route path="/cha" element={<Cha />} />
+        <Route path="/qualarc" element={<QualArc />} />
       </Routes>
     </Router>
   );

@@ -13,7 +13,7 @@ interface NavSidbarProps {
 const NavSidebar = (props: NavSidbarProps) => {
   return (
     <SidebarWrapper width={props.width}>
-      <StyledLink to="/home">
+      <StyledLink to="/">
         <HomeIcon width={20} />
         Home
       </StyledLink>
