@@ -7,7 +7,7 @@ import GalleryImage from "../components/image/GalleryImage";
 import Modal from "../components/modal/Modal";
 import Footer from "../components/footer/Footer";
 
-const Design = () => {
+const Projects = () => {
   const [viewModal, setViewModal] = useState(0);
   return (
     <>
@@ -173,4 +173,4 @@ const GalleryRow = styled.div.attrs({
   margin-bottom: 30px;
 `;
 
-export default Design;
+export default Projects;

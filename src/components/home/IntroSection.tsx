@@ -14,10 +14,7 @@ const IntroSection = () => {
                 <br />
                 Carlson
               </h1>
-              <h4 className="white-text">
-                Designing for the Future -{" "}
-                <span className="highlight-text">UI/UX, Web, Development</span>
-              </h4>
+              <h4 className="white-text">UI/UX, Web, Front-end Development</h4>
               <p>
                 Your story has a future, the only way to know what the future
                 will hold is to create it. I strive to connect clients with
@@ -30,8 +27,8 @@ const IntroSection = () => {
             </div>
             <VerticalText>
               <p>
-                Designer <span className="highlight-text">/</span> Developer{" "}
-                <span className="highlight-text">/</span> Photographer
+                Front-end Developer <span className="highlight-text">/</span>{" "}
+                Designer{" "}
               </p>
             </VerticalText>
             <ScrollDown>

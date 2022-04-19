@@ -9,19 +9,15 @@ const Navbar = () => {
   return (
     <NavBar>
       <div className="container">
-        <NavContent>
-          <p>Nick Carlson</p>
-          <img
-            src="/img/hal.png"
-            alt="Hal is watching you"
-            width={30}
-            height={30}
-          />
-          <HamburgerMenu onClick={() => setShowNav(!showNav)}>
-            {showNav ? String.fromCharCode(10005) : String.fromCharCode(9776)}
-          </HamburgerMenu>
-          <NavSidebar width={showNav ? "350px" : "0px"} />
-        </NavContent>
+        <div className="row">
+          <NavContent>
+            <p>Nick Carlson</p>
+            <HamburgerMenu onClick={() => setShowNav(!showNav)}>
+              {showNav ? String.fromCharCode(10005) : String.fromCharCode(9776)}
+            </HamburgerMenu>
+            <NavSidebar height={showNav ? "300px" : "0px"} />
+          </NavContent>
+        </div>
       </div>
     </NavBar>
   );
@@ -32,7 +28,9 @@ const NavBar = styled.nav`
   color: white;
 `;
 
-const NavContent = styled.div.attrs({})`
+const NavContent = styled.div.attrs({
+  className: "col",
+})`
   display: flex;
   justify-content: space-between;
   align-items: center;

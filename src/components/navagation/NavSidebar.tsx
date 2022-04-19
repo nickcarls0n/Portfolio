@@ -5,45 +5,42 @@ import DesignIcon from "../../Svg/DesignIcon";
 import DevelopmentIcon from "../../Svg/DevelopmentIcon";
 import AboutIcon from "../../Svg/AboutIcon";
 import styled from "styled-components";
+import Spacer from "../spacer/Spacer";
 
 interface NavSidbarProps {
-  width?: string;
+  height?: string;
 }
 
 const NavSidebar = (props: NavSidbarProps) => {
   return (
-    <SidebarWrapper width={props.width}>
+    <SidebarWrapper height={props.height}>
+      <Spacer height="60px" />
       <StyledLink to="/">
         <HomeIcon width={20} />
         Home
       </StyledLink>
-      <StyledLink to="/design">
-        <DesignIcon width={20} />
-        Design
-      </StyledLink>
-      <StyledLink to="/development">
-        <DevelopmentIcon width={20} />
-        Development
-      </StyledLink>
       <StyledLink to="/about">
         <AboutIcon width={20} />
         About
+      </StyledLink>
+      <StyledLink to="/projects">
+        <DesignIcon width={20} />
+        Projects
       </StyledLink>
     </SidebarWrapper>
   );
 };
 
 const SidebarWrapper = styled.div<NavSidbarProps>`
-  height: 100%;
-  width: ${(props) => props.width};
-  position: fixed;
+  height: ${(props) => props.height};
+  width: 350px;
+  position: absolute;
   z-index: 100;
   top: 51px;
   right: 0;
   background-color: #111;
-  overflow-x: hidden;
+  overflow-y: hidden;
   transition: 0.5s;
-  padding-top: 60px;
 
   @media screen and (min-width: 576px) {
     right: 0;
