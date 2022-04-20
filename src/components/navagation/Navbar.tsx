@@ -2,6 +2,7 @@ import React from "react";
 import NavSidebar from "./NavSidebar";
 import styled from "styled-components";
 import { useState } from "react";
+import { NavLink as Link } from "react-router-dom";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -11,7 +12,7 @@ const Navbar = () => {
       <div className="container">
         <div className="row">
           <NavContent>
-            <p>Nick Carlson</p>
+            <NavHomeLink to="/">Nick Carlson</NavHomeLink>
             <HamburgerMenu onClick={() => setShowNav(!showNav)}>
               {showNav ? String.fromCharCode(10005) : String.fromCharCode(9776)}
             </HamburgerMenu>
@@ -35,6 +36,16 @@ const NavContent = styled.div.attrs({
   justify-content: space-between;
   align-items: center;
   position: relative;
+`;
+
+const NavHomeLink = styled(Link)`
+  font-size: 18px;
+  color: white;
+  transition: all 300ms ease-out;
+
+  &:hover {
+    color: #66fcf1;
+  }
 `;
 
 const HamburgerMenu = styled.span`
