@@ -1,5 +1,7 @@
 import React from "react";
 import { NavLink as Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import styled from "styled-components";
 
 const Footer = () => {
@@ -17,10 +19,10 @@ const Footer = () => {
               href="https://www.linkedin.com/in/ncarlsondesign/"
               target="_blank"
             >
-              <SocialIcon className="fab fa-linkedin-in"></SocialIcon>
+              <SocialIcon icon={faLinkedin} />
             </a>
             <a href="https://github.com/nickcarls0n" target="_blank">
-              <SocialIcon className="fab fa-github-square"></SocialIcon>
+              <SocialIcon icon={faGithubSquare} />
             </a>
           </div>
           <div className="col-lg-4">
@@ -88,7 +90,7 @@ const FooterLink = styled(Link)`
   }
 `;
 
-const SocialIcon = styled.i`
+const SocialIcon = styled(FontAwesomeIcon)`
   font-size: 29px;
   padding: 18px 18px 0px 0px;
   color: white;

@@ -1,4 +1,12 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHtml5,
+  faCss3Alt,
+  faJs,
+  faReact,
+  faWordpress,
+} from "@fortawesome/free-brands-svg-icons";
 import styled from "styled-components";
 
 const IntroSection = () => {
@@ -24,6 +32,13 @@ const IntroSection = () => {
                 for people is the most important part of their story. Together,
                 we can create a story worth telling.
               </p>
+              <div>
+                <WebIcon icon={faHtml5} />
+                <WebIcon icon={faCss3Alt} />
+                <WebIcon icon={faJs} />
+                <WebIcon icon={faReact} />
+                <WebIcon icon={faWordpress} />
+              </div>
             </div>
             <VerticalText>
               <p>
@@ -59,6 +74,11 @@ const TextWrapper = styled.div.attrs({
   position: relative;
   top: 40px;
   padding: 40px 40px 60px 40px;
+`;
+
+const WebIcon = styled(FontAwesomeIcon)`
+  margin-right: 20px;
+  color: white;
 `;
 
 const VerticalText = styled.div`
