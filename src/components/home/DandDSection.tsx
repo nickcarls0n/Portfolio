@@ -1,43 +1,44 @@
 import React from "react";
 import Button from "../button/Button";
+import Spacer from "../../components/spacer/Spacer";
 import styled from "styled-components";
 
 const DandDSection = () => {
   return (
     <>
-      <HomeSection img="/img/design-home.png">
+      <HomeSection img="/img/development-home.png" imgSide="left">
+        <div className="container" id="dev-section">
+          <div className="row">
+            <TextSectionTwo>
+              <h3>Development</h3>
+              <p>
+                As a front-end developer I have worked on everything from ground
+                up ecommerce website revamps to desktop app updates. I am
+                experienced in HTML/css, JavaScript, php and have worked on
+                projects in React, WordPress and vanilla JavaScript using both
+                Foundation and Bootstrap frameworks. I strive to create code
+                that is easy to maintain and easily understandable by others.
+              </p>
+              <Button to="/design" text="See More" />
+            </TextSectionTwo>
+          </div>
+        </div>
+      </HomeSection>
+      <Spacer height="100px" />
+      <HomeSection img="/img/design-home.png" imgSide="right">
         <div className="container">
           <div className="row">
             <TextSection>
               <h3>Design</h3>
               <p>
-                For over five years, I have been designing and developing UI/UX,
-                web and print solutions for small to medium-sized businesses. I
-                work hard to create visual experiences that flow seamlessly from
-                screen to page. If you are looking for a designer that can offer
-                diverse range of solutions, from UI/UX design to print, please
-                contact me.
+                I have created designs for both screen and print. I work hard to
+                create a visual experience that flows from screen to print. As a
+                designer I have created website layouts, email campaigns,
+                printed advertising material including flyers mailers and
+                catalogs.
               </p>
               <Button to="/design" text="See More" />
             </TextSection>
-          </div>
-        </div>
-      </HomeSection>
-      <HomeSection img="/img/development-home.png">
-        <div className="container">
-          <div className="row">
-            <TextSectionTwo>
-              <h3>Development</h3>
-              <p>
-                For over five years, I have been designing and developing UI/UX,
-                web and print solutions for small to medium-sized businesses. I
-                work hard to create visual experiences that flow seamlessly from
-                screen to page. If you are looking for a designer that can offer
-                diverse range of solutions, from UI/UX design to print, please
-                contact me.
-              </p>
-              <Button to="/design" text="See More" />
-            </TextSectionTwo>
           </div>
         </div>
       </HomeSection>
@@ -45,14 +46,14 @@ const DandDSection = () => {
   );
 };
 
-const HomeSection = styled.div<{ img: string }>`
+const HomeSection = styled.div<{ img: string; imgSide: string }>`
   background-image: url(${(props) => props.img});
-  background-position: right;
   background-repeat: no-repeat;
-  margin: 133px 0 158px 0;
+  background-position: ${(props) => props.imgSide};
   position: relative;
+  display: flex;
+  align-items: center;
   width: 100%;
-  height: calc(0.5 * 100vw);
 
   @media (min-width: 768px) {
     background-size: contain;
@@ -64,7 +65,6 @@ const TextSection = styled.div.attrs({
   className: "col-md-7 offset-md-1",
 })`
   position: relative;
-  margin-top: 18%;
   background: rgba(0, 0, 0, 0.66);
   padding: 40px 40px 60px 40px;
 
@@ -76,7 +76,6 @@ const TextSectionTwo = styled.div.attrs({
   className: "col-md-7 offset-md-4",
 })`
   position: relative;
-  margin-top: 18%;
   background: rgba(0, 0, 0, 0.66);
   padding: 40px 40px 60px 40px;
 

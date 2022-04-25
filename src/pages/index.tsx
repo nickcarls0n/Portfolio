@@ -3,6 +3,7 @@ import Navbar from "../components/navagation/Navbar";
 import IntroSection from "../components/home/IntroSection";
 import Footer from "../components/footer/Footer";
 import DandDSection from "../components/home/DandDSection";
+import Spacer from "../components/spacer/Spacer";
 import styled from "styled-components";
 import Button from "../components/button/Button";
 
@@ -19,7 +20,9 @@ const HomePage = () => {
         }}
       >
         <IntroSection />
+        <Spacer height="200px" />
         <DandDSection />
+        <Spacer height="100px" />
         <div style={{ position: "relative" }}>
           <div className="container">
             <div className="row">
@@ -68,10 +71,9 @@ const HomePage = () => {
 };
 
 const TextSection = styled.div.attrs({
-  className: "col-md-7 offset-md-1",
+  className: "col-md-7 offset-md-4",
 })`
   position: relative;
-  margin-top: 18%;
   background: rgba(0, 0, 0, 0.66);
   padding: 40px 40px 60px 40px;
 
@@ -81,9 +83,12 @@ const TextSection = styled.div.attrs({
 
 const AboutImg = styled.img`
   position: absolute;
-  right: 0px;
+  height: calc(0.365 * 100vw);
+  left: 0;
   top: 0px;
   opacity: 0.89;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 `;
 
 const AboutList = styled.ul`

@@ -36,7 +36,7 @@ const SidebarWrapper = styled.div<NavSidbarProps>`
   width: 350px;
   position: absolute;
   z-index: 100;
-  top: 51px;
+  top: 40px;
   right: 0;
   background-color: #111;
   overflow-y: hidden;

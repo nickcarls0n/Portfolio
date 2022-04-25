@@ -7,9 +7,14 @@ import {
   faReact,
   faWordpress,
 } from "@fortawesome/free-brands-svg-icons";
+import ReactTooltip from "react-tooltip";
 import styled from "styled-components";
+import { Link } from "react-scroll";
 
 const IntroSection = () => {
+  const activeDate = () => {
+    return new Date().getFullYear() - 2016;
+  };
   return (
     <IntroWrap>
       <TreeBackground src="/img/home-tree.jpg" alt="background image" />
@@ -24,20 +29,22 @@ const IntroSection = () => {
               </h1>
               <h4 className="white-text">UI/UX, Web, Front-end Development</h4>
               <p>
-                Your story has a future, the only way to know what the future
-                will hold is to create it. I strive to connect clients with
-                their customer base through UI/UX design, web design,
-                photography, email marketing, print advertising and brand
-                development, but most of all. I truly feel that the work I do
-                for people is the most important part of their story. Together,
-                we can create a story worth telling.
+                I am a talented front-end developer and designer with over{" "}
+                {activeDate()} years of experience creating successful websites
+                that are fast, easy to use and built with the best practices.
               </p>
               <div>
-                <WebIcon icon={faHtml5} />
-                <WebIcon icon={faCss3Alt} />
-                <WebIcon icon={faJs} />
-                <WebIcon icon={faReact} />
-                <WebIcon icon={faWordpress} />
+                <WebIcon data-tip="HTML 5" icon={faHtml5} />
+
+                <WebIcon data-tip="css 3" icon={faCss3Alt} />
+                <WebIcon data-tip="JavaScript" icon={faJs} />
+                <WebIcon data-tip="React" icon={faReact} />
+                <WebIcon data-tip="WordPress" icon={faWordpress} />
+                <ReactTooltip
+                  place="top"
+                  backgroundColor="#66fcf1"
+                  textColor="#090a0d"
+                />
               </div>
             </div>
             <VerticalText>
@@ -47,12 +54,13 @@ const IntroSection = () => {
               </p>
             </VerticalText>
             <ScrollDown>
-              <a href="#scroll">
+              <Link to="dev-section" smooth>
                 <b>
                   {" "}
-                  &larr; Scroll <span className="highlight-text">Down</span>
+                  <BlinkArrow>&larr;</BlinkArrow> Scroll{" "}
+                  <span className="highlight-text">Down</span>
                 </b>
-              </a>
+              </Link>
             </ScrollDown>
           </TextWrapper>
         </div>
@@ -63,12 +71,12 @@ const IntroSection = () => {
 
 const IntroWrap = styled.div`
   background-color: #202833;
-  height: 680px;
+  height: 600px;
   z-index: -1;
 `;
 
 const TextWrapper = styled.div.attrs({
-  className: "col-md-10 offset-md-1",
+  className: "col-md-8 offset-md-1",
 })`
   background: rgba(0, 0, 0, 0.5);
   position: relative;
@@ -92,8 +100,9 @@ const VerticalText = styled.div`
 const ScrollDown = styled.div`
   display: none;
   position: absolute;
-  left: 10px;
-  top: 550px;
+  cursor: pointer;
+  right: 0;
+  top: 524px;
   transform: rotate(-90deg);
   z-index: 300;
 
@@ -107,9 +116,20 @@ const ScrollDown = styled.div`
   }
 `;
 
+const BlinkArrow = styled.span`
+animation: blinker 1.8s ease-out infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0.2;
+  }
+`;
+
 const TreeBackground = styled.img`
   position: absolute;
-  top: 133px;
+  max-height: 600px;
+  top: 100px;
   right: 0;
   opacity: 0.86;
 `;
