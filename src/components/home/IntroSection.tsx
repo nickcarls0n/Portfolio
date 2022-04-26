@@ -57,7 +57,7 @@ const IntroSection = () => {
               <Link to="dev-section" smooth>
                 <b>
                   {" "}
-                  <BlinkArrow>&larr;</BlinkArrow> Scroll{" "}
+                  <BlinkArrow>{`<`}</BlinkArrow> Scroll{" "}
                   <span className="highlight-text">Down</span>
                 </b>
               </Link>

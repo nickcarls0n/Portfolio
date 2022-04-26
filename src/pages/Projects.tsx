@@ -5,6 +5,7 @@ import Image from "../components/image/Image";
 import styled from "styled-components";
 import GalleryImage from "../components/image/GalleryImage";
 import Modal from "../components/modal/Modal";
+import Spacer from "../components/spacer/Spacer";
 import Footer from "../components/footer/Footer";
 
 const Projects = () => {
@@ -12,11 +13,47 @@ const Projects = () => {
   return (
     <>
       <Navbar />
+      <Spacer height="100px" />
       <div className="container">
         <div className="row">
           <div className="col">
-            <h1 className="accent-onlight">Case Studies</h1>
-            <hr />
+            <h1 className="accent-onlight">Projects</h1>
+            <Hr />
+            <p className="dark-text">
+              Over the past 6 years I have worked on a diverse range of projects
+              from conception to final implementation. I am comfortable working
+              in React, WorkPress, php and vanilla JavaScript, and have done
+              testing in Ghost, Sage and running headless cms with React as a
+              front-end. I have designed projects using the Adobe Creative Suite
+              (Photoshop, Illustrator, Xd) and Figma.
+            </p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-lg-4">
+            <h3 className="accent-onlight">Devlopment Tools</h3>
+            <ul>
+              <li>HTML/css</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>php</li>
+            </ul>
+          </div>
+          <div className="col-lg-4">
+            <h3 className="accent-onlight">Design Tools</h3>
+            <ul>
+              <li>PhotoShop</li>
+              <li>Illustrator</li>
+              <li>Adobe Xd</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+        </div>
+        <Spacer height="60px" />
+        <div className="row">
+          <div className="col">
+            <h2 className="accent-onlight">Case Studies</h2>
+            <Hr />
           </div>
         </div>
         <div className="row">
@@ -32,7 +69,9 @@ const Projects = () => {
               <li>UI/UX Design</li>
               <li>Wordpress Development</li>
             </ul>
-            <CaseStudyLink to="/cinicbike">See More &#8594;</CaseStudyLink>
+            <CaseStudyLink to="/cinicbike">
+              See More <span>{`>`}</span>
+            </CaseStudyLink>
           </div>
           <div className="col-md-4">
             <Image
@@ -46,7 +85,9 @@ const Projects = () => {
               <li>Development</li>
               <li>Email Marketing</li>
             </ul>
-            <CaseStudyLink to="/cha">See More &#8594;</CaseStudyLink>
+            <CaseStudyLink to="/cha">
+              See More <span>{`>`}</span>
+            </CaseStudyLink>
           </div>
           <div className="col-md-4">
             <Image
@@ -55,17 +96,21 @@ const Projects = () => {
             />
             <h3 className="accent-onlight">Qualarc Mfg</h3>
             <ul>
+              <li>Site Redesign</li>
               <li>E-commerce</li>
               <li>UI/UX Design</li>
               <li>Wordpress Development</li>
             </ul>
-            <CaseStudyLink to="/qualarc">See More &#8594;</CaseStudyLink>
+            <CaseStudyLink to="/qualarc">
+              See More <span>{`>`}</span>
+            </CaseStudyLink>
           </div>
         </div>
+        <Spacer height="60px" />
         <div className="row">
           <div className="col">
             <h2 className="accent-onlight">Design</h2>
-            <hr />
+            <Hr />
           </div>
         </div>
         <GalleryRow>
@@ -152,18 +197,31 @@ const Projects = () => {
           </div>
         </GalleryRow>
       </div>
+      <Spacer height="100px" />
       <Footer />
     </>
   );
 };
+
+const Hr = styled.hr`
+  margin-bottom: 37px;
+`;
 
 const CaseStudyLink = styled(Link)`
   text-decoration: none;
   color: #46a29f;
   transition: all 300ms ease-out;
 
+  span {
+    transition: all 300ms ease-out;
+  }
+
   &:hover {
     color: #66fcf1;
+
+    span {
+      margin-left: 6px;
+    }
   }
 `;
 
