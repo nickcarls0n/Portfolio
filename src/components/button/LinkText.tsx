@@ -6,16 +6,23 @@ interface LinkTextProps {
   isExternal?: boolean;
   text?: string;
   link?: string;
+  style?: any;
 }
 
 const LinkText = (props: LinkTextProps) => {
-  const { isExternal, text, link = "/" } = props;
+  const { isExternal, text, link = "/", style } = props;
   return (
-    <>
-      <StyledLink to={link}>
-        See More <span>{`>`}</span>
-      </StyledLink>
-    </>
+    <div style={style}>
+      {isExternal ? (
+        <StyledLink as="a" href={link} target="_blank">
+          {text} <span>{`>`}</span>
+        </StyledLink>
+      ) : (
+        <StyledLink to={link}>
+          {text} <span>{`>`}</span>
+        </StyledLink>
+      )}
+    </div>
   );
 };
 

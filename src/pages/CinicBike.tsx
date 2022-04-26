@@ -3,6 +3,7 @@ import Image from "../components/image/Image";
 import Spacer from "../components/spacer/Spacer";
 import Navbar from "../components/navagation/Navbar";
 import Footer from "../components/footer/Footer";
+import LinkText from "../components/button/LinkText";
 import styled from "styled-components";
 
 const CinicBike = () => {
@@ -29,6 +30,18 @@ const CinicBike = () => {
               to grow big. The brand needed a logo, web and e-commerce platform
               as well as printed material and apparel designs.
             </p>
+            <LinkText
+              text="The Site"
+              link="https://cinicbikegear.com/"
+              style={{ marginTop: "20px" }}
+              isExternal
+            />
+            <LinkText
+              text="The Code"
+              link="https://github.com/nickcarls0n/Cinic"
+              style={{ marginTop: "12px" }}
+              isExternal
+            />
             <PhoneMockup src="img/design/cinic/cinic-phone-mockup.png" />
           </div>
         </div>

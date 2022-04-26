@@ -4,11 +4,13 @@ import Spacer from "../components/spacer/Spacer";
 import Navbar from "../components/navagation/Navbar";
 import Footer from "../components/footer/Footer";
 import styled from "styled-components";
+import LinkText from "../components/button/LinkText";
 
 const Cha = () => {
   return (
     <>
       <Navbar />
+      <Spacer height="100px" />
       <div className="container">
         <div className="row">
           <div className="col">
@@ -28,8 +30,16 @@ const Cha = () => {
               street signs and outdoor home items, needed a way to inform and
               advertise their expanding installation services to Northern
               California clients. The company also needed me to design and
-              develop a series of email marketing campaigns.
+              develop a series of email marketing campaigns. PLEASE NOTE: I am
+              no longer maintaining this site and there maybe changes from the
+              images on this page.
             </p>
+            <LinkText
+              text="The Site"
+              link="https://mailboxspecialties.com/"
+              style={{ marginTop: "20px" }}
+              isExternal
+            />
             <PhoneMockup src="img/design/cha/cha-install-iphone-mockup.png" />
           </div>
         </div>
@@ -117,7 +127,7 @@ const PhoneMockup = styled.img`
 
   @media (min-width: 992px) {
     position: absolute;
-    top: 400px;
+    top: 460px;
     right: 40%;
     width: 120%;
     max-width: 488px;
