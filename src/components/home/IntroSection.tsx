@@ -6,6 +6,8 @@ import {
   faJs,
   faReact,
   faWordpress,
+  faPython,
+  faSass,
 } from "@fortawesome/free-brands-svg-icons";
 import ReactTooltip from "react-tooltip";
 import styled from "styled-components";
@@ -35,10 +37,11 @@ const IntroSection = () => {
               </p>
               <div>
                 <WebIcon data-tip="HTML 5" icon={faHtml5} />
-
                 <WebIcon data-tip="css 3" icon={faCss3Alt} />
+                <WebIcon data-tip="Sass" icon={faSass} />
                 <WebIcon data-tip="JavaScript" icon={faJs} />
                 <WebIcon data-tip="React" icon={faReact} />
+                <WebIcon data-tip="Python" icon={faPython} />
                 <WebIcon data-tip="WordPress" icon={faWordpress} />
                 <ReactTooltip
                   place="top"

@@ -7,6 +7,7 @@ import GalleryImage from "../components/image/GalleryImage";
 import Modal from "../components/modal/Modal";
 import Spacer from "../components/spacer/Spacer";
 import Footer from "../components/footer/Footer";
+import LinkText from "../components/button/LinkText";
 
 const Projects = () => {
   const [viewModal, setViewModal] = useState(0);
@@ -34,9 +35,11 @@ const Projects = () => {
             <h3 className="accent-onlight">Devlopment Tools</h3>
             <ul>
               <li>HTML/css</li>
+              <li>Sass</li>
               <li>JavaScript</li>
               <li>React</li>
               <li>php</li>
+              <li>WordPress</li>
             </ul>
           </div>
           <div className="col-lg-4">
@@ -69,9 +72,7 @@ const Projects = () => {
               <li>UI/UX Design</li>
               <li>Wordpress Development</li>
             </ul>
-            <CaseStudyLink to="/cinicbike">
-              See More <span>{`>`}</span>
-            </CaseStudyLink>
+            <LinkText text="Project Details" link="/cinicbike" />
           </div>
           <div className="col-md-4">
             <Image
@@ -85,9 +86,7 @@ const Projects = () => {
               <li>Development</li>
               <li>Email Marketing</li>
             </ul>
-            <CaseStudyLink to="/cha">
-              See More <span>{`>`}</span>
-            </CaseStudyLink>
+            <LinkText text="Project Details" link="/cha" />
           </div>
           <div className="col-md-4">
             <Image
@@ -101,9 +100,7 @@ const Projects = () => {
               <li>UI/UX Design</li>
               <li>Wordpress Development</li>
             </ul>
-            <CaseStudyLink to="/qualarc">
-              See More <span>{`>`}</span>
-            </CaseStudyLink>
+            <LinkText text="Project Details" link="/qualarc" />
           </div>
         </div>
         <Spacer height="60px" />

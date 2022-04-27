@@ -36,7 +36,7 @@ const StyledLink = styled(Link)`
   }
 
   &:hover {
-    color: #66fcf1;
+    color: #090a0d;
 
     span {
       margin-left: 6px;

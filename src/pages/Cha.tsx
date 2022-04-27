@@ -30,8 +30,9 @@ const Cha = () => {
               street signs and outdoor home items, needed a way to inform and
               advertise their expanding installation services to Northern
               California clients. The company also needed me to design and
-              develop a series of email marketing campaigns. PLEASE NOTE: I am
-              no longer maintaining this site and there maybe changes from the
+              develop a series of email marketing campaigns.{" "}
+              <span className="accent-onlight">PLEASE NOTE:</span> I am no
+              longer maintaining this site and there maybe changes from the
               images on this page.
             </p>
             <LinkText

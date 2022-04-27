@@ -3,6 +3,7 @@ import Image from "../components/image/Image";
 import Spacer from "../components/spacer/Spacer";
 import Navbar from "../components/navagation/Navbar";
 import Footer from "../components/footer/Footer";
+import LinkText from "../components/button/LinkText";
 import styled from "styled-components";
 
 const QualArc = () => {
@@ -27,8 +28,17 @@ const QualArc = () => {
               When I joined the QualArc team I found a very out dated website,
               dated product photos and marketing material. The company needed a
               marketing face lift that would bring it’s product offering update
-              without losing the brand awareness that the owner had built.
+              without losing the brand awareness that the owner had built.{" "}
+              <span className="accent-onlight">PLEASE NOTE:</span> I am no
+              longer maintaining this site and there maybe changes from the
+              images on this page.
             </p>
+            <LinkText
+              text="The Site"
+              link="https://qualarc.com/"
+              style={{ marginTop: "20px" }}
+              isExternal
+            />
             <PhoneMockup src="img/design/qualarc/qualarc-mobile-mockup.png" />
           </div>
         </div>
@@ -95,7 +105,7 @@ const PhoneMockup = styled.img`
 
   @media (min-width: 992px) {
     position: absolute;
-    top: 400px;
+    top: 460px;
     right: 40%;
     width: 120%;
     max-width: 488px;

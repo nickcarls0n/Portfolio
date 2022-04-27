@@ -19,7 +19,7 @@ const DandDSection = () => {
                 Foundation and Bootstrap frameworks. I strive to create code
                 that is easy to maintain and easily understandable by others.
               </p>
-              <Button to="/projects" text="See More" />
+              <Button to="/projects" text="View Projects" />
             </TextSectionTwo>
           </div>
         </div>
@@ -37,7 +37,7 @@ const DandDSection = () => {
                 printed advertising material including flyers mailers and
                 catalogs.
               </p>
-              <Button to="/projects" text="See More" />
+              <Button to="/projects" text="View Projects" />
             </TextSection>
           </div>
         </div>
