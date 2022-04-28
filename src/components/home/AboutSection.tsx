@@ -3,7 +3,7 @@ import Button from "../button/Button";
 import Spacer from "../../components/spacer/Spacer";
 import styled from "styled-components";
 
-const DandDSection = () => {
+const AboutSection = () => {
   return (
     <>
       <HomeSection img="/img/development-home.png" imgSide="left">
@@ -21,24 +21,6 @@ const DandDSection = () => {
               </p>
               <Button to="/projects" text="View Projects" />
             </TextSectionTwo>
-          </div>
-        </div>
-      </HomeSection>
-      <Spacer heightSm="100px" heightLg="160px" />
-      <HomeSection img="/img/design-home.png" imgSide="right">
-        <div className="container">
-          <div className="row">
-            <TextSection>
-              <h3>Design</h3>
-              <p>
-                I have created designs for both screen and print. I work hard to
-                create a visual experience that flows from screen to print. As a
-                designer I have created website layouts, email campaigns,
-                printed advertising material including flyers mailers and
-                catalogs.
-              </p>
-              <Button to="/projects" text="View Projects" />
-            </TextSection>
           </div>
         </div>
       </HomeSection>
@@ -85,4 +67,4 @@ const TextSectionTwo = styled.div.attrs({
   }
 `;
 
-export default DandDSection;
+export default AboutSection;

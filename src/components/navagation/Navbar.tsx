@@ -16,7 +16,7 @@ const Navbar = () => {
             <HamburgerMenu onClick={() => setShowNav(!showNav)}>
               {showNav ? String.fromCharCode(10005) : String.fromCharCode(9776)}
             </HamburgerMenu>
-            <NavSidebar height={showNav ? "300px" : "0px"} />
+            <NavSidebar height={showNav ? "260px" : "0px"} />
           </NavContent>
         </div>
       </div>
@@ -27,6 +27,9 @@ const Navbar = () => {
 const NavBar = styled.nav`
   background: rgb(0, 0, 0);
   color: white;
+  position: fixed;
+  width: -webkit-fill-available;
+  z-index: 99;
 `;
 
 const NavContent = styled.div.attrs({

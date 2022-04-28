@@ -9,11 +9,14 @@ const Footer = () => {
     <FooterWrap>
       <div className="container">
         <div className="row">
-          <div className="col-lg-4">
+          <div className="col-lg-3 offset-md-1">
             <FooterHeader>Connect With Me</FooterHeader>
             <FooterList>
-              <li>Nicholas Carlson</li>
-              <li>contactncarlson@gmail.com</li>
+              <li>
+                <MailLink href="mailto:contactncarlson@gmail.com">
+                  contactncarlson@gmail.com
+                </MailLink>
+              </li>
             </FooterList>
             <a
               href="https://www.linkedin.com/in/ncarlsondesign/"
@@ -25,7 +28,7 @@ const Footer = () => {
               <SocialIcon icon={faGithubSquare} />
             </a>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-3 offset-md-1">
             <FooterHeader>Navigation</FooterHeader>
             <FooterList>
               <li>
@@ -70,7 +73,6 @@ const FooterWrap = styled.footer`
 `;
 
 const FooterHeader = styled.h4`
-  padding-bottom: 37px;
   color: white;
 `;
 
@@ -79,6 +81,15 @@ const FooterList = styled.ul`
   margin: 0;
   padding: 0;
   line-height: 1.8;
+`;
+
+const MailLink = styled.a`
+  color: white;
+  transition: all 300ms ease-out;
+
+  &:hover {
+    color: #66fcf1;
+  }
 `;
 
 const FooterLink = styled(Link)`

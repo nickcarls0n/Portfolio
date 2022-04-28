@@ -5,7 +5,6 @@ import DesignIcon from "../../Svg/DesignIcon";
 import DevelopmentIcon from "../../Svg/DevelopmentIcon";
 import AboutIcon from "../../Svg/AboutIcon";
 import styled from "styled-components";
-import Spacer from "../spacer/Spacer";
 
 interface NavSidbarProps {
   height?: string;
@@ -14,7 +13,6 @@ interface NavSidbarProps {
 const NavSidebar = (props: NavSidbarProps) => {
   return (
     <SidebarWrapper height={props.height}>
-      <Spacer height="60px" />
       <StyledLink to="/">
         <HomeIcon width={20} />
         Home
@@ -33,12 +31,13 @@ const NavSidebar = (props: NavSidbarProps) => {
 
 const SidebarWrapper = styled.div<NavSidbarProps>`
   height: ${(props) => props.height};
-  width: 350px;
+  width: 300px;
   position: absolute;
-  z-index: 100;
+  z-index: 99;
   top: 40px;
   right: 0;
   background-color: #111;
+  border-bottom: ${(props) => props.height != "0px" && "#66fcf1 solid 4px"};
   overflow-y: hidden;
   transition: 0.5s;
 

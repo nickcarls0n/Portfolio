@@ -19,6 +19,7 @@ const ContactForm = () => {
                 id="entry.1630247408"
                 name="name"
                 placeholder="Your Name"
+                autoComplete="off"
                 required
               />
               <Label>Email</Label>
@@ -27,6 +28,7 @@ const ContactForm = () => {
                 id="email"
                 name="entry.1807431491"
                 placeholder="Your Email"
+                autoComplete="nope"
                 required
               />
               <Label>How Can I Help?</Label>
@@ -58,8 +60,8 @@ const Label = styled.label`
 `;
 
 const Input = styled.input`
+  font-family: "Roboto Mono", monospace;
   padding: 12px;
-  background-color: #202833;
   border: none;
 
   &:focus-visible {
@@ -68,8 +70,8 @@ const Input = styled.input`
 `;
 
 const TextArea = styled.textarea`
+  font-family: "Roboto Mono", monospace;
   padding: 12px;
-  background-color: #202833;
   border: none;
   margin-bottom: 24px;
 
