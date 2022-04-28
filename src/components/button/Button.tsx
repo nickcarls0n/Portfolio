@@ -3,14 +3,25 @@ import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 
 interface ButtonProps {
-  to: string;
+  to?: string;
   text?: string;
+  type?: "button" | "reset" | "submit";
+  style?: {};
 }
 
 const Button = (props: ButtonProps) => {
+  const { to = "/", text, type, style } = props;
   return (
     <>
-      <StyledButton to={props.to}>{props.text}</StyledButton>
+      {type ? (
+        <StyledButton as="button" style={style} type={type}>
+          {text}
+        </StyledButton>
+      ) : (
+        <StyledButton to={to} style={style}>
+          {text}
+        </StyledButton>
+      )}
     </>
   );
 };

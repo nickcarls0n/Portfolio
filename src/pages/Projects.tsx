@@ -8,6 +8,18 @@ import Modal from "../components/modal/Modal";
 import Spacer from "../components/spacer/Spacer";
 import Footer from "../components/footer/Footer";
 import LinkText from "../components/button/LinkText";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHtml5,
+  faCss3Alt,
+  faJs,
+  faReact,
+  faWordpress,
+  faPython,
+  faSass,
+  faBootstrap,
+} from "@fortawesome/free-brands-svg-icons";
+import ReactTooltip from "react-tooltip";
 
 const Projects = () => {
   const [viewModal, setViewModal] = useState(0);
@@ -52,6 +64,22 @@ const Projects = () => {
             </ul>
           </div>
         </div>
+        <div className="row">
+          <div className="col">
+            <h3 className="accent-onlight">This Site</h3>
+            <p className="dark-text">
+              Was built with React using Create ReactApp. It is using React
+              Router to handle the multiple page format and Styled Components
+              for styling.
+            </p>
+            <LinkText
+              text="View Site Code"
+              link="https://github.com/nickcarls0n/Portfolio"
+              style={{ marginTop: "20px" }}
+              isExternal
+            />
+          </div>
+        </div>
         <Spacer height="60px" />
         <div className="row">
           <div className="col">
@@ -72,6 +100,11 @@ const Projects = () => {
               <li>UI/UX Design</li>
               <li>Wordpress Development</li>
             </ul>
+            <div>
+              <ProjectIcon data-tip="WordPress" icon={faWordpress} />
+              <ProjectIcon data-tip="Python" icon={faPython} />
+              <ProjectIcon data-tip="Sass" icon={faSass} />
+            </div>
             <LinkText text="Project Details" link="/cinicbike" />
           </div>
           <div className="col-md-4">
@@ -86,6 +119,10 @@ const Projects = () => {
               <li>Development</li>
               <li>Email Marketing</li>
             </ul>
+            <ProjectIcon data-tip="HTML 5" icon={faHtml5} />
+            <ProjectIcon data-tip="css 3" icon={faCss3Alt} />
+            <ProjectIcon data-tip="JavaScript" icon={faJs} />
+            <ProjectIcon data-tip="Bootstrap" icon={faBootstrap} />
             <LinkText text="Project Details" link="/cha" />
           </div>
           <div className="col-md-4">
@@ -100,6 +137,15 @@ const Projects = () => {
               <li>UI/UX Design</li>
               <li>Wordpress Development</li>
             </ul>
+            <ProjectIcon data-tip="WordPress" icon={faWordpress} />
+            <ProjectIcon data-tip="Python" icon={faPython} />
+            <ProjectIcon data-tip="Sass" icon={faSass} />
+            {/* This is the tooltip for all the above ProjectIcons */}
+            <ReactTooltip
+              place="top"
+              backgroundColor="#46a29f"
+              textColor="#090a0d"
+            />
             <LinkText text="Project Details" link="/qualarc" />
           </div>
         </div>
@@ -158,7 +204,9 @@ const Projects = () => {
               showModal={viewModal == 6}
               img="img/design/prestige-plaques-mockup.jpg"
               title="Prestige Plaques Website Design and Development"
-              about="This projects was a design and implementation of a website where users can select from a number of product options and make a purchase. I used Adobe xd for the design portion and created a custom e-commerce WordPress template."
+              about="This projects was a design and implementation of a website where users can select from a number of product options and make a purchase. I used Adobe xd for the design portion and created a custom e-commerce WordPress template using sass and php."
+              link="https://prestigeplaques.com/"
+              linkText="https://prestigeplaques.com/"
               onClick={() => setViewModal(0)}
             />
           </div>
@@ -173,7 +221,7 @@ const Projects = () => {
               showModal={viewModal == 7}
               img="img/design/mailkeeper-web-mockup.jpg"
               title="MailKeeper Website Design and Development"
-              about="This projects was a completed redesign of an old very dated website. I used Adobe xd for the design portion and HTML/css leveraging Bootstrap for the site."
+              about="This projects was a completed redesign of an old very dated website. I used Adobe xd for the design portion and HTML/css and javaScript while  leveraging Bootstrap for the site layout."
               link="https://themailkeeper.com/"
               linkText="https://themailkeeper.com/"
               onClick={() => setViewModal(0)}
@@ -202,6 +250,12 @@ const Projects = () => {
 
 const Hr = styled.hr`
   margin-bottom: 37px;
+`;
+
+const ProjectIcon = styled(FontAwesomeIcon)`
+  margin-right: 20px;
+  margin-bottom: 1em;
+  color: #090a0d;
 `;
 
 const CaseStudyLink = styled(Link)`

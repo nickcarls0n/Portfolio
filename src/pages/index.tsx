@@ -6,6 +6,7 @@ import DandDSection from "../components/home/DandDSection";
 import Spacer from "../components/spacer/Spacer";
 import styled from "styled-components";
 import Button from "../components/button/Button";
+import ContactForm from "../components/forms/ContactForm";
 
 const HomePage = () => {
   return (
@@ -58,11 +59,13 @@ const HomePage = () => {
                     </AboutList>
                   </div>
                 </div>
-                <Button to="/about" text="See More" />
+                <Button to="/about" text="More About Me" />
               </TextSection>
             </div>
           </div>
         </div>
+        <Spacer height="200px" />
+        <ContactForm />
       </main>
 
       <Footer />
