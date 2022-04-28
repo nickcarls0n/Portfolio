@@ -152,18 +152,23 @@ const Projects = () => {
         <Spacer height="60px" />
         <div className="row">
           <div className="col">
-            <h2 className="accent-onlight">Design</h2>
+            <h2 className="accent-onlight">Design and Development</h2>
             <Hr />
           </div>
         </div>
         <GalleryRow>
           <div className="col-lg-4">
-            <GalleryImage img="url(img/design/Hang-Ten-Mock-up.jpg)" />
+            <GalleryImage
+              img="url(img/design/mailkeeper-web-mockup.jpg)"
+              onClick={() => setViewModal(7)}
+            />
             <Modal
-              showModal={viewModal == 4}
-              img="img/design/cha-lights.jpg"
-              title="Ad banner design"
-              about="This was part of a larger marketing push to create assets that would generate traffic to the companies e-commerce site."
+              showModal={viewModal == 7}
+              img="img/design/mailkeeper-web-mockup.jpg"
+              title="MailKeeper Website Design and Development"
+              about="This projects was a completed redesign of an old very dated website. I used Adobe xd for the design portion and HTML/css and javaScript while  leveraging Bootstrap for the site layout."
+              link="https://themailkeeper.com/"
+              linkText="https://themailkeeper.com/"
               onClick={() => setViewModal(0)}
             />
           </div>
@@ -214,16 +219,16 @@ const Projects = () => {
         <GalleryRow>
           <div className="col-lg-4">
             <GalleryImage
-              img="url(img/design/mailkeeper-web-mockup.jpg)"
-              onClick={() => setViewModal(7)}
+              img="url(img/design/Hang-Ten-Mock-up.jpg)"
+              onClick={() => setViewModal(3)}
             />
             <Modal
-              showModal={viewModal == 7}
-              img="img/design/mailkeeper-web-mockup.jpg"
-              title="MailKeeper Website Design and Development"
-              about="This projects was a completed redesign of an old very dated website. I used Adobe xd for the design portion and HTML/css and javaScript while  leveraging Bootstrap for the site layout."
-              link="https://themailkeeper.com/"
-              linkText="https://themailkeeper.com/"
+              showModal={viewModal == 3}
+              img="img/design/Hang-Ten-Mock-up.jpg"
+              title="Web Design and Development"
+              about="This was a pet project to redesign and develop an existing website."
+              // link="/projects"
+              // linkText="Coming Soon"
               onClick={() => setViewModal(0)}
             />
           </div>

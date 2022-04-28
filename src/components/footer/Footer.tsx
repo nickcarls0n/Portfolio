@@ -9,7 +9,7 @@ const Footer = () => {
     <FooterWrap>
       <div className="container">
         <div className="row">
-          <div className="col-lg-3 offset-md-1">
+          <div className="col-lg-4">
             <FooterHeader>Connect With Me</FooterHeader>
             <FooterList>
               <li>
@@ -28,7 +28,7 @@ const Footer = () => {
               <SocialIcon icon={faGithubSquare} />
             </a>
           </div>
-          <div className="col-lg-3 offset-md-1">
+          <div className="col-lg-4">
             <FooterHeader>Navigation</FooterHeader>
             <FooterList>
               <li>

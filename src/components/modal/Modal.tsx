@@ -32,7 +32,9 @@ const Modal = ({
             <ModalImg src={img} alt="Some alt text" />
             <h4>{title}</h4>
             <p>{about}</p>
-            <ModalLink href={link}>{linkText}</ModalLink>
+            <ModalLink href={link} target="_blank">
+              {linkText}
+            </ModalLink>
           </ModalCol>
         </div>
       </div>

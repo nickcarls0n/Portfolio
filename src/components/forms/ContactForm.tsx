@@ -49,7 +49,7 @@ const ContactForm = () => {
 const FormWrapper = styled.div.attrs({
   className: "col-md-7 offset-md-1",
 })`
-  background: rgba(0, 0, 0, 0.66);
+  background: rgba(0, 0, 0, 0.8);
   padding: 40px 40px 60px 40px;
 `;
 

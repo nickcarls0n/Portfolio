@@ -18,24 +18,28 @@ const AboutSection = () => {
               direction.
             </p>
             <div className="row">
+              <div className="col">
+                <h5>I am Skilled in:</h5>
+              </div>
+            </div>
+            <div className="row">
               <div className="col-6">
-                <h4>Design</h4>
                 <AboutList>
-                  <li>UI Design</li>
-                  <li>Email Design</li>
-                  <li>Adobe CC</li>
-                  <li>Figma</li>
-                  <li>Sketch</li>
+                  <li>Web App Development</li>
+                  <li>HTML / css / JavaScript</li>
+                  <li>Bootstrap</li>
+                  <li>JavaScript</li>
+                  <li>React</li>
+                  <li>Php</li>
                 </AboutList>
               </div>
               <div className="col-6">
-                <h4>Development</h4>
                 <AboutList>
-                  <li>Web App</li>
-                  <li>React</li>
-                  <li>HTML / css / JavaScript</li>
-                  <li>E-Commerce</li>
-                  <li>Email</li>
+                  <li>UI Design</li>
+                  <li>Brand Design</li>
+                  <li>Adobe Xd</li>
+                  <li>Photoshop</li>
+                  <li>Figma</li>
                 </AboutList>
               </div>
             </div>
@@ -51,7 +55,7 @@ const TextSection = styled.div.attrs({
   className: "col-md-10 offset-md-1",
 })`
   position: relative;
-  background: rgba(0, 0, 0, 0.66);
+  background: rgba(0, 0, 0, 0.8);
   padding: 40px 40px 60px 40px;
 
   @media (min-width: 768px) {

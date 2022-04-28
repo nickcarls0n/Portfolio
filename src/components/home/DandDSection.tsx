@@ -6,10 +6,10 @@ import styled from "styled-components";
 const DandDSection = () => {
   return (
     <>
-      <HomeSection img="/img/development-home.png" imgSide="left">
+      <HomeSection img="/img/development-home-right.png" imgSide="right">
         <div className="container" id="dev-section">
           <div className="row">
-            <TextSectionTwo>
+            <TextSection>
               <h3>Development</h3>
               <p>
                 As a front-end developer I have worked on everything from ground
@@ -20,7 +20,7 @@ const DandDSection = () => {
                 that is easy to maintain and easily understandable by others.
               </p>
               <Button to="/projects" text="View Projects" />
-            </TextSectionTwo>
+            </TextSection>
           </div>
         </div>
       </HomeSection>
@@ -65,19 +65,7 @@ const TextSection = styled.div.attrs({
   className: "col-md-7 offset-md-1",
 })`
   position: relative;
-  background: rgba(0, 0, 0, 0.66);
-  padding: 40px 40px 60px 40px;
-
-  @media (min-width: 768px) {
-    margin-bottom: -60px;
-  }
-`;
-
-const TextSectionTwo = styled.div.attrs({
-  className: "col-md-7 offset-md-4",
-})`
-  position: relative;
-  background: rgba(0, 0, 0, 0.66);
+  background: rgba(0, 0, 0, 0.8);
   padding: 40px 40px 60px 40px;
 
   @media (min-width: 768px) {

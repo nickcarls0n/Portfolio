@@ -43,33 +43,6 @@ const Main = styled.main`
   padding-bottom: 140px;
 `;
 
-const TextSection = styled.div.attrs({
-  className: "col-md-7 offset-md-4",
-})`
-  position: relative;
-  background: rgba(0, 0, 0, 0.66);
-  padding: 40px 40px 60px 40px;
-
-  @media (min-width: 768px) {
-  }
-`;
-
-const AboutImg = styled.img`
-  position: absolute;
-  height: calc(0.365 * 100vw);
-  left: 0;
-  top: -60px;
-  opacity: 0.89;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-`;
-
-const AboutList = styled.ul`
-  padding-left: 24px;
-  color: white;
-  line-height: 1.6;
-`;
-
 const TreeBackground = styled.img`
   position: absolute;
   max-height: 600px;
