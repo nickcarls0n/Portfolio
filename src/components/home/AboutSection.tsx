@@ -6,45 +6,49 @@ import styled from "styled-components";
 const AboutSection = () => {
   return (
     <>
-      <HomeSection img="/img/development-home.png" imgSide="left">
-        <div className="container" id="dev-section">
-          <div className="row">
-            <TextSectionTwo>
-              <h3>Development</h3>
-              <p>
-                As a front-end developer I have worked on everything from ground
-                up ecommerce website revamps to desktop app updates. I am
-                experienced in HTML/css, JavaScript, php and have worked on
-                projects in React, WordPress and vanilla JavaScript using both
-                Foundation and Bootstrap frameworks. I strive to create code
-                that is easy to maintain and easily understandable by others.
-              </p>
-              <Button to="/projects" text="View Projects" />
-            </TextSectionTwo>
-          </div>
+      <div className="container">
+        <div className="row">
+          <TextSection>
+            <h3>About</h3>
+            <p>
+              I’m Nick Carlson, a designer and front end developer. Throughout
+              my career, I have lead projects in user interface design, web
+              application design and development, brand identity, e-commerce
+              design and implementation, illustration and art & creative
+              direction.
+            </p>
+            <div className="row">
+              <div className="col-6">
+                <h4>Design</h4>
+                <AboutList>
+                  <li>UI Design</li>
+                  <li>Email Design</li>
+                  <li>Adobe CC</li>
+                  <li>Figma</li>
+                  <li>Sketch</li>
+                </AboutList>
+              </div>
+              <div className="col-6">
+                <h4>Development</h4>
+                <AboutList>
+                  <li>Web App</li>
+                  <li>React</li>
+                  <li>HTML / css / JavaScript</li>
+                  <li>E-Commerce</li>
+                  <li>Email</li>
+                </AboutList>
+              </div>
+            </div>
+            <Button to="/about" text="More About Me" />
+          </TextSection>
         </div>
-      </HomeSection>
+      </div>
     </>
   );
 };
 
-const HomeSection = styled.div<{ img: string; imgSide: string }>`
-  background-image: url(${(props) => props.img});
-  background-repeat: no-repeat;
-  background-position: ${(props) => props.imgSide};
-  position: relative;
-  display: flex;
-  align-items: end;
-  width: 100%;
-
-  @media (min-width: 768px) {
-    background-size: contain;
-    height: calc(0.365 * 100vw);
-  }
-`;
-
 const TextSection = styled.div.attrs({
-  className: "col-md-7 offset-md-1",
+  className: "col-md-10 offset-md-1",
 })`
   position: relative;
   background: rgba(0, 0, 0, 0.66);
@@ -55,16 +59,10 @@ const TextSection = styled.div.attrs({
   }
 `;
 
-const TextSectionTwo = styled.div.attrs({
-  className: "col-md-7 offset-md-4",
-})`
-  position: relative;
-  background: rgba(0, 0, 0, 0.66);
-  padding: 40px 40px 60px 40px;
-
-  @media (min-width: 768px) {
-    margin-bottom: -60px;
-  }
+const AboutList = styled.ul`
+  padding-left: 24px;
+  color: white;
+  line-height: 1.6;
 `;
 
 export default AboutSection;

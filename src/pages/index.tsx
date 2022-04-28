@@ -17,49 +17,9 @@ const HomePage = () => {
         <IntroSection />
         <Spacer height="200px" />
         <DandDSection />
-        <Spacer height="220px" />
-        <AboutSection />
-        {/* <div style={{ position: "relative" }}>
-          <div className="container">
-            <div className="row">
-              <AboutImg src="/img/me-snowday.jpg" alt="" />
-              <TextSection>
-                <h3>About</h3>
-                <p>
-                  I’m Nick Carlson, a designer and front end developer.
-                  Throughout my career, I have lead projects in user interface
-                  design, web application design and development, brand
-                  identity, e-commerce design and implementation, illustration
-                  and art & creative direction.
-                </p>
-                <div className="row">
-                  <div className="col-6">
-                    <h4>Design</h4>
-                    <AboutList>
-                      <li>UI Design</li>
-                      <li>Email Design</li>
-                      <li>Adobe CC</li>
-                      <li>Figma</li>
-                      <li>Sketch</li>
-                    </AboutList>
-                  </div>
-                  <div className="col-6">
-                    <h4>Development</h4>
-                    <AboutList>
-                      <li>Web App</li>
-                      <li>React</li>
-                      <li>HTML / css / JavaScript</li>
-                      <li>E-Commerce</li>
-                      <li>Email</li>
-                    </AboutList>
-                  </div>
-                </div>
-                <Button to="/about" text="More About Me" />
-              </TextSection>
-            </div>
-          </div>
-        </div> */}
         <Spacer height="160px" />
+        <AboutSection />
+        <Spacer height="220px" />
         <div style={{ position: "relative" }}>
           <TreeBackground src="/img/home-tree.jpg" alt="background image" />
           <ContactForm />
