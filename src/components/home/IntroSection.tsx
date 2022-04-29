@@ -13,11 +13,9 @@ import React from "react";
 import { Link } from "react-scroll";
 import ReactTooltip from "react-tooltip";
 import styled from "styled-components";
+import { ActiveDate } from "../scripts/ActiveDate";
 
 const IntroSection = () => {
-  const activeDate = () => {
-    return new Date().getFullYear() - 2016;
-  };
   return (
     <IntroWrap>
       <TreeBackground src="/img/home-tree.jpg" alt="background image" />
@@ -33,7 +31,7 @@ const IntroSection = () => {
               <h4 className="white-text">UI/UX, Web, Front-end Development</h4>
               <p>
                 I am a talented front-end developer and designer with over{" "}
-                {activeDate()} years of experience creating successful websites
+                {ActiveDate()} years of experience creating successful websites
                 that are fast, easy to use and built with the best practices.
               </p>
               <div>

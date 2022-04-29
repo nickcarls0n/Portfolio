@@ -3,11 +3,9 @@ import styled from "styled-components";
 import Footer from "../components/footer/Footer";
 import Navbar from "../components/navigation/Navbar";
 import Spacer from "../components/spacer/Spacer";
+import { ActiveDate } from "../components/scripts/ActiveDate";
 
 const About = () => {
-  const activeDate = () => {
-    return new Date().getFullYear() - 2016;
-  };
   return (
     <>
       <Navbar />
@@ -19,7 +17,7 @@ const About = () => {
               <h1 className="accent-onlight">About Me</h1>
               <p className="dark-text">
                 I'm Nicholas Carlson, a California based front-end developer and
-                designer. For over {activeDate()} years I have been involved in
+                designer. For over {ActiveDate()} years I have been involved in
                 and lead projects in user interface design, web application
                 development, e-commerce design and implementation as well as
                 creative direction and planning.

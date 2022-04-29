@@ -19,6 +19,7 @@ import Image from "../components/image/Image";
 import Modal from "../components/modal/Modal";
 import Navbar from "../components/navigation/Navbar";
 import Spacer from "../components/spacer/Spacer";
+import { ActiveDate } from "../components/scripts/ActiveDate";
 
 const Projects = () => {
   const [viewModal, setViewModal] = useState(0);
@@ -32,12 +33,13 @@ const Projects = () => {
             <h1 className="accent-onlight">Projects</h1>
             <Hr />
             <p className="dark-text">
-              Over the past 6 years I have worked on a diverse range of projects
-              from conception to final implementation. I am comfortable working
-              in React, WorkPress, php and vanilla JavaScript, and have done
-              testing in Ghost, Sage and running headless cms with React as a
-              front-end. I have designed projects using the Adobe Creative Suite
-              (Photoshop, Illustrator, Xd) and Figma.
+              Over the past {ActiveDate()} years I have worked on a diverse
+              range of projects from conception to final implementation. I am
+              comfortable working in React, WorkPress, php and vanilla
+              JavaScript, and have done testing in Ghost, Sage and running
+              headless cms with React as a front-end. I have designed projects
+              using the Adobe Creative Suite (Photoshop, Illustrator, Xd) and
+              Figma.
             </p>
           </div>
         </div>
