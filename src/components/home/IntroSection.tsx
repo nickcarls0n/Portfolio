@@ -1,18 +1,18 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faHtml5,
-  faCss3Alt,
-  faJs,
-  faReact,
-  faWordpress,
-  faPython,
-  faSass,
   faBootstrap,
+  faCss3Alt,
+  faHtml5,
+  faJs,
+  faPython,
+  faReact,
+  faSass,
+  faWordpress,
 } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+import { Link } from "react-scroll";
 import ReactTooltip from "react-tooltip";
 import styled from "styled-components";
-import { Link } from "react-scroll";
 
 const IntroSection = () => {
   const activeDate = () => {

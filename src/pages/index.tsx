@@ -1,13 +1,12 @@
 import React from "react";
-import Navbar from "../components/navagation/Navbar";
-import IntroSection from "../components/home/IntroSection";
-import Footer from "../components/footer/Footer";
-import DandDSection from "../components/home/DandDSection";
-import Spacer from "../components/spacer/Spacer";
 import styled from "styled-components";
-import Button from "../components/button/Button";
+import Footer from "../components/footer/Footer";
 import ContactForm from "../components/forms/ContactForm";
 import AboutSection from "../components/home/AboutSection";
+import DandDSection from "../components/home/DandDSection";
+import IntroSection from "../components/home/IntroSection";
+import Navbar from "../components/navigation/Navbar";
+import Spacer from "../components/spacer/Spacer";
 
 const HomePage = () => {
   return (

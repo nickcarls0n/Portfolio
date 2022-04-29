@@ -1,16 +1,16 @@
 import React from "react";
-import Button from "../button/Button";
-import Spacer from "../../components/spacer/Spacer";
 import styled from "styled-components";
+import Spacer from "../../components/spacer/Spacer";
+import Button from "../button/Button";
 
 const DandDSection = () => {
   return (
     <>
-      <HomeSection img="/img/development-home-right.png" imgSide="right">
+      <HomeSection img="/img/development-home-right.png">
         <div className="container" id="dev-section">
           <div className="row">
             <TextSection>
-              <h3>Development</h3>
+              <h3 style={{ marginBlockStart: " 0px" }}>Development</h3>
               <p>
                 As a front-end developer I have worked on everything from ground
                 up ecommerce website revamps to desktop app updates. I am
@@ -25,11 +25,11 @@ const DandDSection = () => {
         </div>
       </HomeSection>
       <Spacer heightSm="100px" heightLg="160px" />
-      <HomeSection img="/img/design-home.png" imgSide="right">
+      <HomeSection img="/img/design-home.png">
         <div className="container">
           <div className="row">
             <TextSection>
-              <h3>Design</h3>
+              <h3 style={{ marginBlockStart: " 0px" }}>Design</h3>
               <p>
                 I have created designs for both screen and print. I work hard to
                 create a visual experience that flows from screen to print. As a
@@ -46,10 +46,10 @@ const DandDSection = () => {
   );
 };
 
-const HomeSection = styled.div<{ img: string; imgSide: string }>`
+const HomeSection = styled.div<{ img: string }>`
   background-image: url(${(props) => props.img});
   background-repeat: no-repeat;
-  background-position: ${(props) => props.imgSide};
+  background-position: right;
   position: relative;
   display: flex;
   align-items: end;

@@ -1,7 +1,7 @@
+import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { NavLink as Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import styled from "styled-components";
 
 const Footer = () => {

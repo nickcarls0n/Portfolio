@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import Image from "../components/image/Image";
-import Spacer from "../components/spacer/Spacer";
-import Navbar from "../components/navagation/Navbar";
-import Footer from "../components/footer/Footer";
+import React from "react";
 import styled from "styled-components";
 import LinkText from "../components/button/LinkText";
+import Footer from "../components/footer/Footer";
+import Image from "../components/image/Image";
+import Navbar from "../components/navigation/Navbar";
+import Spacer from "../components/spacer/Spacer";
 
 const Cha = () => {
   return (

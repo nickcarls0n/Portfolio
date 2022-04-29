@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import Image from "../components/image/Image";
-import Spacer from "../components/spacer/Spacer";
-import Navbar from "../components/navagation/Navbar";
-import Footer from "../components/footer/Footer";
-import LinkText from "../components/button/LinkText";
+import React from "react";
 import styled from "styled-components";
+import LinkText from "../components/button/LinkText";
+import Footer from "../components/footer/Footer";
+import Image from "../components/image/Image";
+import Navbar from "../components/navigation/Navbar";
+import Spacer from "../components/spacer/Spacer";
 
 const CinicBike = () => {
   return (
@@ -73,9 +73,9 @@ const CinicBike = () => {
               As a small startup Cinic needed an online store that would be give
               them room for product growth as well as offer the ability to
               become an information hub for the company. I built a custom theme
-              for WordPress. I am using a plugin to handdle the transaction and
-              I have included a blog section that is linked to Cinic’s social
-              media for product updates for a one stop marketing hub.{" "}
+              for WordPress. I am using a plugin to handle the transaction and I
+              have included a blog section that is linked to Cinic’s social
+              media for product updates for a one stop marketing hub.
             </p>
             <h2 className="accent-onlight">Tools</h2>
             <ul>

@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "../components/navagation/Navbar";
-import Footer from "../components/footer/Footer";
-import Spacer from "../components/spacer/Spacer";
 import styled from "styled-components";
+import Footer from "../components/footer/Footer";
+import Navbar from "../components/navigation/Navbar";
+import Spacer from "../components/spacer/Spacer";
 
 const About = () => {
   const activeDate = () => {

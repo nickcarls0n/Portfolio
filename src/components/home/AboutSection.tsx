@@ -1,53 +1,50 @@
 import React from "react";
-import Button from "../button/Button";
-import Spacer from "../../components/spacer/Spacer";
 import styled from "styled-components";
+import Button from "../button/Button";
 
 const AboutSection = () => {
   return (
-    <>
-      <div className="container">
-        <div className="row">
-          <TextSection>
-            <h3>About</h3>
-            <p>
-              I’m Nick Carlson, a designer and front end developer. Throughout
-              my career, I have lead projects in user interface design, web
-              application design and development, brand identity, e-commerce
-              design and implementation, illustration and art & creative
-              direction.
-            </p>
-            <div className="row">
-              <div className="col">
-                <h5>I am Skilled in:</h5>
-              </div>
+    <div className="container">
+      <div className="row">
+        <TextSection>
+          <h3 style={{ marginBlockStart: " 0px" }}>About</h3>
+          <p>
+            I’m Nick Carlson, a designer and front end developer. Throughout my
+            career, I have lead projects in user interface design, web
+            application design and development, brand identity, e-commerce
+            design and implementation, illustration and art & creative
+            direction.
+          </p>
+          <div className="row">
+            <div className="col">
+              <h5>I am Skilled in:</h5>
             </div>
-            <div className="row">
-              <div className="col-6">
-                <AboutList>
-                  <li>Web App Development</li>
-                  <li>HTML / css / JavaScript</li>
-                  <li>Bootstrap</li>
-                  <li>JavaScript</li>
-                  <li>React</li>
-                  <li>Php</li>
-                </AboutList>
-              </div>
-              <div className="col-6">
-                <AboutList>
-                  <li>UI Design</li>
-                  <li>Brand Design</li>
-                  <li>Adobe Xd</li>
-                  <li>Photoshop</li>
-                  <li>Figma</li>
-                </AboutList>
-              </div>
+          </div>
+          <div className="row">
+            <div className="col-6">
+              <AboutList>
+                <li>Web App Development</li>
+                <li>HTML / css / JavaScript</li>
+                <li>Bootstrap</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Php</li>
+              </AboutList>
             </div>
-            <Button to="/about" text="More About Me" />
-          </TextSection>
-        </div>
+            <div className="col-6">
+              <AboutList>
+                <li>UI Design</li>
+                <li>Brand Design</li>
+                <li>Adobe Xd</li>
+                <li>Photoshop</li>
+                <li>Figma</li>
+              </AboutList>
+            </div>
+          </div>
+          <Button to="/about" text="More About Me" />
+        </TextSection>
       </div>
-    </>
+    </div>
   );
 };
 

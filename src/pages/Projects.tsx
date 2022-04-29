@@ -1,25 +1,24 @@
-import React, { useState } from "react";
-import Navbar from "../components/navagation/Navbar";
-import { NavLink as Link } from "react-router-dom";
-import Image from "../components/image/Image";
-import styled from "styled-components";
-import GalleryImage from "../components/image/GalleryImage";
-import Modal from "../components/modal/Modal";
-import Spacer from "../components/spacer/Spacer";
-import Footer from "../components/footer/Footer";
-import LinkText from "../components/button/LinkText";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faHtml5,
+  faBootstrap,
   faCss3Alt,
+  faHtml5,
   faJs,
-  faReact,
-  faWordpress,
   faPython,
   faSass,
-  faBootstrap,
+  faWordpress,
 } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { useState } from "react";
+import { NavLink as Link } from "react-router-dom";
 import ReactTooltip from "react-tooltip";
+import styled from "styled-components";
+import LinkText from "../components/button/LinkText";
+import Footer from "../components/footer/Footer";
+import GalleryImage from "../components/image/GalleryImage";
+import Image from "../components/image/Image";
+import Modal from "../components/modal/Modal";
+import Navbar from "../components/navigation/Navbar";
+import Spacer from "../components/spacer/Spacer";
 
 const Projects = () => {
   const [viewModal, setViewModal] = useState(0);
@@ -44,7 +43,7 @@ const Projects = () => {
         </div>
         <div className="row">
           <div className="col-lg-4">
-            <h3 className="accent-onlight">Devlopment Tools</h3>
+            <h3 className="accent-onlight">Development Tools</h3>
             <ul>
               <li>HTML/css</li>
               <li>Sass</li>
