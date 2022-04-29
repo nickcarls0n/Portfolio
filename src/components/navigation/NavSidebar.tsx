@@ -1,10 +1,9 @@
 import React from "react";
 import { NavLink as Link } from "react-router-dom";
-import HomeIcon from "../../Svg/HomeIcon";
-import DesignIcon from "../../Svg/DesignIcon";
-import DevelopmentIcon from "../../Svg/DevelopmentIcon";
-import AboutIcon from "../../Svg/AboutIcon";
 import styled from "styled-components";
+import AboutIcon from "../../Svg/AboutIcon";
+import DesignIcon from "../../Svg/DesignIcon";
+import HomeIcon from "../../Svg/HomeIcon";
 
 interface NavSidbarProps {
   height?: string;

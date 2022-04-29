@@ -3,10 +3,10 @@ import styled from "styled-components";
 import Footer from "../components/footer/Footer";
 import ContactForm from "../components/forms/ContactForm";
 import AboutSection from "../components/home/AboutSection";
-import DandDSection from "../components/home/DandDSection";
 import IntroSection from "../components/home/IntroSection";
 import Navbar from "../components/navigation/Navbar";
 import Spacer from "../components/spacer/Spacer";
+import InfoSection from "../components/home/InfoSection";
 
 const HomePage = () => {
   return (
@@ -15,7 +15,20 @@ const HomePage = () => {
       <Main>
         <IntroSection />
         <Spacer height="200px" />
-        <DandDSection />
+
+        <InfoSection
+          img="/img/development-home-right.png"
+          title="Development"
+          text="As a front-end developer I have worked on everything from ground up ecommerce website revamps to desktop app updates. I am experienced in HTML/css, JavaScript, php and have worked on projects in React, WordPress and vanilla JavaScript using both Foundation and Bootstrap frameworks. I strive to create code that is easy to maintain and easily understandable by others."
+          buttonText="View Projects"
+        />
+        <Spacer heightSm="100px" heightLg="160px" />
+        <InfoSection
+          img="/img/design-home.png"
+          title="Design"
+          text="I have created designs for both screen and print. I work hard to create a visual experience that flows from screen to print. As a designer I have created website layouts, email campaigns, printed advertising material including flyers mailers and catalogs."
+          buttonText="View Projects"
+        />
         <Spacer height="160px" />
         <AboutSection />
         <Spacer height="220px" />

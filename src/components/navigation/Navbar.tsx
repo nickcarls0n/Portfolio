@@ -1,8 +1,7 @@
-import React from "react";
-import NavSidebar from "./NavSidebar";
-import styled from "styled-components";
-import { useState } from "react";
+import React, { useState } from "react";
 import { NavLink as Link } from "react-router-dom";
+import styled from "styled-components";
+import NavSidebar from "./NavSidebar";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
