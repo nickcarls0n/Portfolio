@@ -228,8 +228,8 @@ const Projects = () => {
               img="img/design/Hang-Ten-Mock-up.jpg"
               title="Web Design and Development"
               about="This was a pet project to redesign and develop an existing website."
-              // link="/projects"
-              // linkText="Coming Soon"
+              link="https://ncarlsondesign.com/hang-ten/"
+              linkText="https://ncarlsondesign.com/hang-ten/"
               onClick={() => setViewModal(0)}
             />
           </div>
