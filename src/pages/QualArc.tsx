@@ -10,6 +10,7 @@ const QualArc = () => {
   return (
     <>
       <Navbar />
+      <Spacer height="100px" />
       <div className="container">
         <div className="row">
           <div className="col">

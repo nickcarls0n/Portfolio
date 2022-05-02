@@ -8,12 +8,13 @@ interface InfoSectionProps {
   title: string;
   text: string;
   buttonText: string;
+  id?: string;
 }
 
 const InfoSection = (props: InfoSectionProps) => {
-  const { img, title, text, buttonText } = props;
+  const { img, title, text, buttonText, id } = props;
   return (
-    <HomeSection img={img}>
+    <HomeSection img={img} id={id}>
       <div className="container">
         <div className="row">
           <TextSection>

@@ -17,6 +17,7 @@ const HomePage = () => {
         <Spacer height="200px" />
 
         <InfoSection
+          id="dev-section"
           img="/img/development-home-right.png"
           title="Development"
           text="As a front-end developer I have worked on everything from ground up ecommerce website revamps to desktop app updates. I am experienced in HTML/css, JavaScript, php and have worked on projects in React, WordPress and vanilla JavaScript using both Foundation and Bootstrap frameworks. I strive to create code that is easy to maintain and easily understandable by others."

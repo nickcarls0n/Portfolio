@@ -30,7 +30,7 @@ const IntroSection = () => {
               </h1>
               <h4 className="white-text">UI/UX, Web, Front-end Development</h4>
               <p>
-                I am a talented front-end developer and designer with over{" "}
+                A talented front-end developer and designer with over{" "}
                 {ActiveDate()} years of experience creating successful websites
                 that are fast, easy to use and built with the best practices.
               </p>

@@ -16,23 +16,24 @@ const About = () => {
             <div className="col-lg-6">
               <h1 className="accent-onlight">About Me</h1>
               <p className="dark-text">
-                I'm Nicholas Carlson, a California based front-end developer and
+                I'm Nick Carlson, a California based front-end developer and
                 designer. For over {ActiveDate()} years I have been involved in
                 and lead projects in user interface design, web application
                 development, e-commerce design and implementation as well as
                 creative direction and planning.
               </p>
               <p className="dark-text">
-                I studied art and design at California State East Bay. The
-                design curriculum included studies in web design and front-end
-                development. Since graduating I have continued learning and keep
-                my skills sharp and up to date with resources such as Free Code
-                Camp, LinkedIn learning and Treehouse.
+                I have a Bachelor of Arts degree in art and design from
+                California State East Bay. The design curriculum included
+                studies in web design and front-end development. Since
+                graduating I have continued learning and keep my skills sharp
+                and up to date with resources such as Free Code Camp, LinkedIn
+                learning and Treehouse.
               </p>
               <p className="dark-text">
                 When I am not in front of a computer you can find me outside or
                 on at the gym. I am an avid mountain biker and I also have a
-                brown belt in Brazilian Jujitsu.
+                brown belt in Brazilian Jiu Jitsu.
               </p>
               <div className="row">
                 <div className="col-md-6">

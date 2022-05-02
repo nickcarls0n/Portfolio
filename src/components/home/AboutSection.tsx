@@ -9,9 +9,8 @@ const AboutSection = () => {
         <TextSection>
           <h3 style={{ marginBlockStart: " 0px" }}>About</h3>
           <p>
-            I’m Nick Carlson, a designer and front end developer. Throughout my
-            career, I have lead projects in user interface design, web
-            application design and development, brand identity, e-commerce
+            Throughout my career, I have lead projects in user interface design,
+            web application design and development, brand identity, e-commerce
             design and implementation, illustration and art & creative
             direction.
           </p>

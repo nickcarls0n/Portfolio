@@ -7,10 +7,12 @@ import Projects from "./pages/Projects";
 import CinicBike from "./pages/CinicBike";
 import Cha from "./pages/Cha";
 import QualArc from "./pages/QualArc";
+import ScrollToTop from "./components/scripts/ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
