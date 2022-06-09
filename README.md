@@ -12,7 +12,7 @@ This is a portfolio site I created that showcases some of the design and develop
 
 ## Why I built this project this way
 
-- I used Create React App because it is a very fast and easy way to setup dynamic routing in React. There is a lot less to setup going this rout.
+- I used Create React App because it is a very fast and easy way to setup dynamic routing in React. There is a lot less to setup going this route.
 - React Router DOM is a package that I am familiar with and an easy way to implement dynamic routing.
 - Styled-components allowed me to create components that are modular. Keeping the component and styling in one file while also maintaining readability.
 - Leveraging Bootstrap grid I was able to setup a responsive column page structure without having to write a bunch of global styles.
