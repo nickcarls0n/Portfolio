@@ -17,7 +17,7 @@ This is a portfolio site I created that showcases some of the design and develop
 - Styled-components allowed me to create components that are modular. Keeping the component and styling in one file while also maintaining readability.
 - Leveraging Bootstrap grid I was able to setup a responsive column page structure without having to write a bunch of global styles.
 
-## IF I had more time...
+## If I had more time...
 
 - I would like to update the Projects page and About page to reflect the styling that is on the home page
 - Move this project to a more React friendly hosting platform (netlify, Vercel, etc).
